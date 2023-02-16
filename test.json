@@ -1,0 +1,50 @@
+{
+  "name": "/",
+  "type": "directory",
+  "children": [
+    {
+      "name": "home",
+      "type": "directory",
+      "children": [
+        {
+          "name": "xarth",
+          "type": "directory",
+          "children": [
+            {
+              "name": "Documents",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "Downloads",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "file.txt",
+                  "type": "file",
+                  "host_path": "/home/xarth/Downloads/hello.txt",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "user2",
+          "type": "directory",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "etc",
+      "type": "directory",
+      "children": []
+    },
+    {
+      "name": "tmp",
+      "type": "directory",
+      "children": []
+    }
+  ]
+}
