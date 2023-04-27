@@ -34,7 +34,7 @@ static struct options {
 #define OPTION(t, p)                           \
     { t, offsetof(struct options, p), 1 }
 static const struct fuse_opt option_spec[] = {
-	OPTION("--girder_url=%s", girderFolderListing),
+	OPTION("--girder-url=%s", girderFolderListing),
 	OPTION("--token=%s", girderToken),
 	OPTION("-h", show_help),
 	OPTION("--help", show_help),
@@ -172,7 +172,7 @@ static void show_help(const char *progname)
 {
 	printf("usage: %s [options] <mountpoint>\n\n", progname);
 	printf("File-system specific options:\n"
-	       "    --girder_url=<s>   Url pointing to <girder>/api/v1/folder/:id/listing\n"
+	       "    --girder-url=<s>   Url pointing to <girder>/api/v1/folder/:id/listing\n"
 	       "    --token=<s>        Girder Token\n"
 	       "\n");
 }
